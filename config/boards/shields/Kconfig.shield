@@ -1,20 +1,5 @@
-# Copyright (c) 2020 The ZMK Contributors
-# SPDX-License-Identifier: MIT
+config SHIELD_CALDERA_LEFT
+    def_bool $(shields_list_contains,kyria_left)
 
-if SHIELD_KYRIA_LEFT
-
-config ZMK_KEYBOARD_NAME
-	default "Kyria"
-
-config ZMK_SPLIT_ROLE_CENTRAL
-	default y
-
-endif
-
-if SHIELD_KYRIA_LEFT || SHIELD_KYRIA_RIGHT
-
-config ZMK_SPLIT
-	default y
-
-endif
-
+config SHIELD_CALDERA_RIGHT
+    def_bool $(shields_list_contains,kyria_right)
