@@ -6,13 +6,6 @@
 
 #include "kyria_common.dtsi"
 
-&splitkb_kyria_6col_layout {
-    transform = <&default_transform>;
-};
-
-&splitkb_kyria_5col_layout {
-    status = "disabled";
-};
 
 / {
     default_transform: keymap_transform_0 {
