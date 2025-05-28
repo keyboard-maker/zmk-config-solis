@@ -1,13 +1,13 @@
-if SHIELD_KYRIA_LEFT
+if SHIELD_SOLARIS_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "Kyria"
+    default "Ksolaris"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
 endif
-if SHIELD_KYRIA_LEFT || SHIELD_KYRIA_RIGHT
+if SHIELD_SOLARIS_LEFT || SHIELD_SOLARIS_RIGHT
 
 config ZMK_SPLIT
     default y

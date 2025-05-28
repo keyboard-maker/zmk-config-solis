@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: MIT
  */
 
-#include "kyria.dtsi"
+#include "solaris.dtsi"
 	&default_transform { 
     col-offset = <7>;
 };
