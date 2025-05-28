@@ -1,13 +1,14 @@
-if SHIELD_KYRIA_LEFT
+if SHIELD_CALDERA_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "Kyria"
+    default "Caldera"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
 endif
-if SHIELD_KYRIA_LEFT || SHIELD_KYRIA_RIGHT
+
+if SHIELD_CALDERA_LEFT || SHIELD_CALDERA_RIGHT
 
 config ZMK_SPLIT
     default y
