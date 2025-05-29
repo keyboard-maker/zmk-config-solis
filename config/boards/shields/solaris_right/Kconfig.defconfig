@@ -1,7 +1,7 @@
 if SHIELD_SOLARIS_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "Ksolaris"
+    default "solaris"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
