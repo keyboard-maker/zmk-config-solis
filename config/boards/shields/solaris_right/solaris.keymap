@@ -38,40 +38,35 @@
         };
 
         function_layer {
-    // ---------------------------------------------------------------------------------------------------------------------------------
-    // |       |      |      |      |      |      |                                          | BT_CLR |BTSEL0|BTSEL1|BTSEL2|BTSEL3|BTSEL4|
-    // |       |      |      |      |      |      |                                          |        |      |      |      |      |      |
-    // |       |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |
-    //                       |      |      |      |      |      |      |      |      |      |      |      |      |
-    bindings = <
-    &out OUT_BL &kp LBKT &kp RBKT    &kp LBRC  &kp RBRC    &trans                                          &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
-    &trans &kp EXCL     &kp AT   &kp HASH  &kp DOLLAR  &kp PERCENT                                     &trans      &trans      &trans       &trans       &trans       &kp LBKT
-    &trans &kp CARET    &kp AMPS &kp STAR  &kp LPAR    &kp RPAR    &trans                    &trans    &trans     &trans       &trans       &trans       &trans       &kp RBKT
-                        &kp LEFT &kp DOWN  &kp UP      &kp RIGHT   &trans                    &trans    &trans     &trans       &trans       &trans
->;
+            // ---------------------------------------------------------------------------------------------------------------------------------
+            // |       |      |      |      |      |      |                                          | BT_CLR |BTSEL0|BTSEL1|BTSEL2|BTSEL3|BTSEL4|
+            // |       |      |      |      |      |      |                                          |        |      |      |      |      |      |
+            // |       |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |
+            //                       |      |      |      |      |      |      |      |      |      |      |      |      |
+            bindings = <
+                &out OUT_BLE &kp LBKT &kp RBKT    &kp LBRC  &kp RBRC    &trans                                     &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
+                &trans &kp EXCL     &kp AT   &kp HASH  &kp DOLLAR  &kp PERCENT                                     &trans      &trans      &trans       &trans       &trans       &kp LBKT
+                &trans &kp CARET    &kp AMPS &kp STAR  &kp LPAR    &kp RPAR    &trans                    &trans    &trans     &trans       &trans       &trans       &trans       &kp RBKT
+                                    &kp LEFT &kp DOWN  &kp UP      &kp RIGHT   &trans                    &trans    &trans     &trans       &trans       &trans
+            >;
 
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+        };
 
-    sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
-};
+        numpad_layer {
+            // ---------------------------------------------------------------------------------------------------------------------------------
+            // |       |      |      |      |      |      |                                          | BT_CLR |BTSEL0|BTSEL1|BTSEL2|BTSEL3|BTSEL4|
+            // |       |      |      |      |      |      |                                          |        |      |      |      |      |      |
+            // |       |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |
+            //                       |      |      |      |      |      |      |      |      |      |      |      |      |
+            bindings = <
+                &trans &trans &trans &trans &trans &trans                                     &kp N1     &kp N2      &kp N3       &kp PLUS       &kp EQUAL       &trans
+                &trans &trans &trans &trans  &trans  &trans                                   &kp N4     &kp N5      &kp N6       &kp MINUS      &kp UNDER    &trans
+                &trans &trans &trans &trans &trans &trans &trans &trans             &trans    &kp N7     &kp N8      &kp N9       &kp STAR       &trans       &trans 
+                                        &trans &trans &trans &trans &trans          &trans    &trans     &kp N0      &kp DOT      &kp FSLH
+            >;
 
-numpad_layer {
-    // ---------------------------------------------------------------------------------------------------------------------------------
-    // |       |      |      |      |      |      |                                          | BT_CLR |BTSEL0|BTSEL1|BTSEL2|BTSEL3|BTSEL4|
-    // |       |      |      |      |      |      |                                          |        |      |      |      |      |      |
-    // |       |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |
-    //                       |      |      |      |      |      |      |      |      |      |      |      |      |
-    bindings = <
-    &trans &trans &trans &trans &trans &trans                                     &kp N1     &kp N2      &kp N3       &kp PLUS       &kp EQUAL       &trans
-    &trans &trans &trans &trans  &trans  &trans                                   &kp N4     &kp N5      &kp N8       &kp MINUS      &kp UNDER    &trans
-    &trans &trans &trans &trans &trans &trans &trans &trans             &trans    &kp N6     &kp N7      &kp N9       &kp STAR       &trans       &trans 
-                            &trans &trans &trans &trans &trans          &trans    &trans     &kp N0      &kp DOT      &kp FSLH
->;
-
-
-    sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
-};
-
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+        };
     };
-
-    
 };
