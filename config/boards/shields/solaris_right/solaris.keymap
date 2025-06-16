@@ -45,7 +45,7 @@
             //                       |      |      |      |      |      |      |      |      |      |      |      |      |
             bindings = <
                 &out OUT_BLE &kp LBKT &kp RBKT    &kp LBRC  &kp RBRC    &trans                                     &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
-                &trans &kp EXCL     &kp AT   &kp HASH  &kp DOLLAR  &kp PERCENT                                     &trans      &trans      &trans       &trans       &trans       &kp LBKT
+                &trans &kp EXCL     &kp AT   &kp HASH  &kp DOLLAR  &kp PERCENT                                     &trans      &trans      &trans       &trans       &studio_unlock       &kp LBKT
                 &trans &kp CARET    &kp AMPS &kp STAR  &kp LPAR    &kp RPAR    &trans                    &trans    &trans     &trans       &trans       &trans       &trans       &kp RBKT
                                     &kp LEFT &kp DOWN  &kp UP      &kp RIGHT   &trans                    &trans    &trans     &trans       &trans       &trans
             >;
@@ -62,7 +62,7 @@
             bindings = <
                 &trans &trans &trans &trans &trans &trans                                     &kp N1     &kp N2      &kp N3       &kp PLUS       &kp EQUAL    &trans
                 &trans &trans &trans &trans  &trans  &trans                                   &kp N4     &kp N5      &kp N6       &kp MINUS      &kp UNDER    &trans
-                &trans &trans &trans &trans &trans &trans &trans                    &kp N7     &kp N8      &kp N9       &kp STAR       &trans       &trans    &trans
+                &trans &trans &trans &trans &trans &trans &trans                              &kp N7     &kp N8      &kp N9       &kp STAR       &trans       &trans    &trans
                                         &trans &trans &trans &trans &trans          &trans    &trans     &kp N0      &kp DOT      &kp FSLH
             >;
 
