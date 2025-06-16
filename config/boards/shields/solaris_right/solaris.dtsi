@@ -9,7 +9,7 @@
 
 
 / {
-    &solaris-layout {
+    &physical_layout0 {
     transform = <&default_transform>;  // or your actual transform name
     kscan = <&kscan0>;                // or your actual kscan name
     };
