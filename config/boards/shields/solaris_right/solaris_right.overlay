@@ -5,7 +5,7 @@
  */
 
 #include "solaris.dtsi"
-
+#include "solaris-layouts.dtsi"
 &default_transform {
     col-offset = <7>;
 };

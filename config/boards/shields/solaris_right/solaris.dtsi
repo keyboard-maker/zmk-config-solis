@@ -5,24 +5,18 @@
  */
 
 #include <dt-bindings/zmk/matrix_transform.h>
-/ {
-    physical_layouts {
-        compatible = "zmk,physical-layouts";
-        default_layout: default_layout {
-            compatible = "zmk,physical-layout";
-            display-name = "Default Layout";
-            transform = <&default_transform>;
-            kscan = <&kscan0>;
-        };
-    };
+#include "solaris-layouts.dtsi"
+
+&solaris_layout {
+    transform = <&default_transform>;  // or your actual transform name
+    kscan = <&kscan0>;                // or your actual kscan name
 };
 
 / {
-    chosen {
-        zmk,kscan = &kscan0;
-        zmk,matrix_transform = &default_transform;
+   &solaris_layout {
+    transform = <&default_transform>;  // or your actual transform name
+    kscan = <&kscan0>;                // or your actual kscan name
     };
-
     default_transform: keymap_transform_0 {
         compatible = "zmk,matrix-transform";
         columns = <14>;
@@ -53,5 +47,5 @@ RC(3,0) RC(3,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5) RC(2,6)         RC(2,7) RC(2,8) 
            ;
 
     };
-};
+}
 

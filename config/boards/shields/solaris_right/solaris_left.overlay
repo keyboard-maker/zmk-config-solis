@@ -3,7 +3,7 @@
  *
  * SPDX-License-Identifier: MIT
  */
-
+#include "solaris-layouts.dtsi"
 #include "solaris.dtsi"
 
 	&kscan0{
